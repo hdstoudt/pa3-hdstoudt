@@ -70,7 +70,7 @@ After your design is complete and correct, it’s time to start programming and 
 ## ASSIGNMENT REMINDERS
 Follow the programming assignment requirements document for comments, formatting, etc.
 
-Recall that you may not do someone else’s work, or have someone else do your work. Sharing of solutions is an honor code violation. This includes someone who is not in the class, including a tutor, writing any or all of your algorithm or code or dictating to you how to do it. As everyone in the class is solving the same problem, no code may change hands. See the syllabus for details or ask the professor if you are unsure.
+Recall that you may not do someone else’s work, or have someone else do your work. Sharing of solutions is an honor code violation. This includes someone who is not in the class, including a tutor, writing any or all of your algorithm or code or dictating to you how to do it. As everyone in the class is solving the same problem, no code or algorithm may change hands. It is OK to brainstorm together, but **only if nothing is written down while brainstorming, and you are not brainstorming an entire solution**. See the syllabus for details or ask the professor if you are unsure.
 
 ## EXTRA CREDIT (only if everything else works)
 If you choose to do extra credit, it must be submitted in a separate file with “extraCredit” in the file name. 
