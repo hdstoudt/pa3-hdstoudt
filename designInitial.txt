@@ -1,10 +1,12 @@
-Function Name: Input type of sport
+Function Name: Menu
 Parameters: None
-Return: input purpose of each sport
+Return: Menu Choice
 Algorithm:
-1. Ask user to input type of sport: "american football, quidditch, gymnast:"
-2. Error check lower
-3. Return input purpose of each sport as string
+1. Output options: "What type of sport: american football, quidditch, gymnast:""
+2. Ask user to choose
+3. Error check lower
+4. Return input purpose of each sport as string
+
 
 Function Name: american football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
@@ -14,7 +16,8 @@ Algorithm:
 2.Ask user to input Parameters: "interceptions, completions, attempts, passing_yards, touchdown_passes"
 3. Calculation: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
 + 2.375 – (25 * interceptions/attempts)]/6"
-4. return calculation from step 3
+4. Return calculation from step 3
+
 
 Function Name: quidditch
 Parameters: goal, snitch
@@ -23,7 +26,8 @@ Algorithm:
 1. Output Purpose: "This will tell you the score of a team in the game of quidditch."
 2. Ask user to input Parameters: "goal, snitch"
 3. Calculation: "(10(goal)) + (30(snitch))"
-4. return calculation from step 3
+4. Return calculation from step 3
+
 
 Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
@@ -32,7 +36,8 @@ Algorithm:
 1. Output Purpose: "This will tell the final score for a gymnast on any apparatus."
 2. Ask user to input Parameters: "difficulty, execution1, execution2, execution3, execution4, execution5.
 3. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
-4. return calculation from step 3
+4. Return calculation from step 3
+
 
 Function Name: Main
 Parameters: None
