@@ -4,23 +4,7 @@ Return: Menu Choice
 Algorithm:
 1. Output options: "What type of sport: american football, quidditch, gymnast:""
 2. Ask user to choose
-3. if sport is american football:
-    a. sport = "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
-    + 2.375 – (25 * interceptions/attempts)]/6"
-4. elif sport is quidditch:
-    a.sport = "(10(goal)) + (30(snitch))"
-5. otherwise if the sport is gymnast:
-    a. sport = "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
-6. Otherwise:
-    a.Output: "invalid entry"
-    b sport = 0
-3. Return input purpose of each sport as string
-
-Function Name: sport
-Parameters: american football, quidditch, gymnast
-Return: Calculation of sport
-Algorithm:
-1. Call menu function
+3. Return menu choose
 
 
 Function Name: american football
@@ -62,10 +46,4 @@ Algorithm:
 for the user, based on the user’s choice of sport."
 2. Call menu
 3. Call sport (gymnast, quidditch, or american football)
-4. Output the results to the user: "yOUR SCORE IS "
-
-Function Name:
-Parameters:
-Return:
-Algorithm:
-1.
+4. Output the results to the user: "Your score is.. "
