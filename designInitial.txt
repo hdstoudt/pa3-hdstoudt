@@ -34,7 +34,8 @@ Return: Calculation of Parameters
 Algorithm:
 1. Output Purpose: "This will tell the final score for a gymnast on any apparatus."
 2. Ask user to input Parameters: "difficulty, execution1, execution2, execution3, execution4, execution5.
-3. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
+3. Take out the max exeuction and the min execution
+4. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
 4. Return calculation from step 3
 
 
