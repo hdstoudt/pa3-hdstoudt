@@ -11,7 +11,11 @@ Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
 Return: Calculation of Parameters
 Algorithm:
-1.Ask user to input Parameters: "interceptions, completions, attempts, passing_yards, touchdown_passes"
+1.Ask user to input Parameter: "interceptions"
+2.Ask user to input Parameter: "completions"
+3.Ask user to input Parameter: "attempts"
+4.Ask user to input Parameter: "passing_yards"
+5.Ask user to input Parameter: "touchdown_passes"
 6. Calculation: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
 + 2.375 – (25 * interceptions/attempts)]/6"
 7. Return calculation from step 3
@@ -21,7 +25,8 @@ Function Name: quidditch
 Parameters: goal, snitch
 Return: Calculation of Parameters
 Algorithm:
-1. Ask user to input Parameters: "goal, snitch"
+1. Ask user to input Parameter: "goal"
+1. Ask user to input Parameter: "snitch"
 2. Calculation: "(10(goal)) + (30(snitch))"
 3. Return calculation from step 3
 
@@ -30,11 +35,21 @@ Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
 Return: Calculation of Parameters
 Algorithm:
-1. Ask user to input Parameters: "difficulty, execution1, execution2, execution3, execution4, execution5"
+1. Ask user to input Parameter: "difficulty"
+1. Ask user to input Parameter: "execution1"
+1. Ask user to input Parameter: "execution2"
+1. Ask user to input Parameter: "execution3"
+1. Ask user to input Parameter: "execution4"
+1. Ask user to input Parameter: "execution5"
 2. Take out the max exeuction and the min execution
 3. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
 4. Return calculation from step 3
 
+Function Name: error
+Parameters: None
+Return: error check
+Algorithm:
+1.
 
 Function Name: Main
 Parameters: None
@@ -43,6 +58,11 @@ Algorithm:
 1. Tell the user the purpose of the program: "This program will calculate various sports statistics
 for the user, based on the user’s choice of sport."
 2. Call menu
-3. Call sport (quidditch, football, or gymnast.)
+3. Call sport gymnast based on menu
+4. Call sport quidditch based on menu
+5. Call sport football based on menu
 6. Output the results to the user: "Your score is.. "
-
+7. If football is equal to 158.3
+    a. Output: "You are a perfect passer."
+8. Otherwise:
+    b. Output: "Sorry, you are not considered a perfect passer."
