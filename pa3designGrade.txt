@@ -1,0 +1,31 @@
+PA3 Design Grade: 6.35/10
+** There is always a chance that I did not notice or comment on some small issue, or did not notice something due to other errors in the design. Be sure to make sure you've met all requirements after fixing your design.
+
+2.5/3 Function choices make sense, along with parameters and return values:
+- a function name can't have a space in it
+- put a purpose in your main only, not in your calculation functions
+- need a function for int error checking
+
+0.8/1 Calculates Quarterback correctly:
+- each input is its own step
+
+0.8/1 Calculates Quiddich correctly:
+- each input is its own step
+
+0.75/1 Calculates Gymnastics correctly:
+- each input is its own step
+- how do you drop the lowest and highest score? Need to reason through the steps.
+
+0/1 Calculated min/max correctly:
+- you need to write an algorithm of how to do that. Right now you just state that you need to do so, you don't have an algorithm at all.
+
+0.25/1 Error checking is incorporated correctly:
+- make sure you have some error checking on the result of your menu
+- need to error check if ints are actually ints
+- need to keep from dividing by zero. This is not relevant for the gymnastics score, but for quarterback. Need to show how and when you do this in the calculation function.
+
+0.75/1 Output for each calculation is correct:
+- missing perfect passer output
+
+0.5/1 User chooses which calculation to do, and only that calculation runs:
+- step 3 of your main is many steps. Need to write them all out; how will you call the right thing?
