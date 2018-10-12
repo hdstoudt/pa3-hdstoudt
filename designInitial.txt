@@ -2,42 +2,54 @@ Function Name: Menu
 Parameters: None
 Return: Menu Choice
 Algorithm:
-1. Output options: "What type of sport: american football, quidditch, gymnast:""
+1. Output options: "What type of sport: football, quidditch, gymnast:""
 2. Ask user to choose
 3. Return menu choose
 
 
-Function Name: american football
+Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
 Return: Calculation of Parameters
 Algorithm:
-1. Output Purpose: "This will tell you whether or not the Quarter Back is a perfect passer."
-2.Ask user to input Parameters: "interceptions, completions, attempts, passing_yards, touchdown_passes"
-3. Calculation: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
+1.Ask user to input Parameter: "interceptions"
+2.Ask user to input Parameter: "completions"
+3.Ask user to input Parameter: "attempts"
+4.Ask user to input Parameter: "passing_yards"
+5.Ask user to input Parameter: "touchdown_passes"
+6. Calculation: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
 + 2.375 – (25 * interceptions/attempts)]/6"
-4. Return calculation from step 3
+7. Return calculation from step 3
 
 
 Function Name: quidditch
 Parameters: goal, snitch
 Return: Calculation of Parameters
 Algorithm:
-1. Output Purpose: "This will tell you the score of a team in the game of quidditch."
-2. Ask user to input Parameters: "goal, snitch"
-3. Calculation: "(10(goal)) + (30(snitch))"
-4. Return calculation from step 3
+1. Ask user to input Parameter: "goal"
+1. Ask user to input Parameter: "snitch"
+2. Calculation: "(10(goal)) + (30(snitch))"
+3. Return calculation from step 3
 
 
 Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
 Return: Calculation of Parameters
 Algorithm:
-1. Output Purpose: "This will tell the final score for a gymnast on any apparatus."
-2. Ask user to input Parameters: "difficulty, execution1, execution2, execution3, execution4, execution5.
-3. Take out the max exeuction and the min execution
-4. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
+1. Ask user to input Parameter: "difficulty"
+1. Ask user to input Parameter: "execution1"
+1. Ask user to input Parameter: "execution2"
+1. Ask user to input Parameter: "execution3"
+1. Ask user to input Parameter: "execution4"
+1. Ask user to input Parameter: "execution5"
+2. Take out the max exeuction and the min execution
+3. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
 4. Return calculation from step 3
 
+Function Name: error
+Parameters: None
+Return: error check
+Algorithm:
+1.
 
 Function Name: Main
 Parameters: None
@@ -46,5 +58,5 @@ Algorithm:
 1. Tell the user the purpose of the program: "This program will calculate various sports statistics
 for the user, based on the user’s choice of sport."
 2. Call menu
-3. Call sport (gymnast, quidditch, or american football)
+3. Call sport (gymnast, quidditch, or football)
 4. Output the results to the user: "Your score is.. "
