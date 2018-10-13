@@ -55,22 +55,47 @@ Algorithm:
 1. Ask user to input Parameter: "execution3"
 1. Ask user to input Parameter: "execution4"
 1. Ask user to input Parameter: "execution5"
-2. Take out the max exeuction and the min execution
 3. Calculation_Gym: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
 4. Return Calculation_Gym
 
-Function Name: error
-Parameters: None
-Return: error check
+
+Function Name: calculate_min
+Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
+Return: min_value
 Algorithm:
-1.
+1. Set min_value to execuation1
+2. If execuation2 is less than min_value:
+    a. Set min_value to execuation2
+3. If execuation3 is less than min_value:
+    a. Set min_value to execuation3
+4. If execuation4 is less than min_value:
+    a. Set min_value to execuation4
+5. If execuation5 is less than min_value:
+    a. Set min_value to execuation5
+6. Return min_value
+
+
+Function Name: calculate_max
+Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
+Return: max_value
+Algorithm:
+1. Set max_value to execuation1
+2. If execuation2 is greater than max_value:
+    a. Set max_value to execuation2
+3. If execuation3 is greater than max_value:
+    a. Set max_value to execuation3
+4. If execuation4 is greater than max_value:
+    a. Set max_value to execuation4
+5. If execuation5 is greater than max_value:
+    a. Set max_value to execuation5
+6. Return max_value
 
 Function Name: Main
 Parameters: None
 Return: None
 Algorithm:
-1. Tell the user the purpose of the program: "This program will calculate various sports statistics
-for the user, based on the user’s choice of sport."
+1. Tell the user the purpose of the program: "This program will calculate various sports statistics for the user, based
+on the user’s choice of sport."
 2. Call menu
 3. Call error_check_menu
 4. If error_check_menu is equal to "incorrect":
@@ -86,5 +111,9 @@ for the user, based on the user’s choice of sport."
 6. Otherwise/If menu_choice is equal to "quidditch":
     a. Call quidditch
     b. Output: ("Your score for Quidditch is", Calculation_Quid)
+7. Otherwise:
+    a. Call gymnast
+    b. Output: ("Your final score is", Calculation_Gym)
+
 
 
