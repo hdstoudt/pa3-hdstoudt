@@ -1,10 +1,24 @@
 Function Name: Menu
 Parameters: None
-Return: Menu Choice
+Return: menu_choice
 Algorithm:
 1. Output options: "What type of sport: football, quidditch, gymnast:"
 2. Ask user to choose
-3. Return menu choose
+3. Return menu_choice
+
+
+Function Name: error_check_menu
+Parameters: menu_choice
+Return: correct_or_incorrect
+Algorithm:
+1. If menu_choice is equal to "football" :
+    a. return correct
+2. Otherwise/If menu_choice is equal to "quidditch" :
+    a. return correct
+3. Otherwise/If menu_choice is equal to "gymnast" :
+    a. return correct
+4. Otherwise:
+    a. return incorrect
 
 
 Function Name: football
@@ -16,9 +30,9 @@ Algorithm:
 3.Ask user to input Parameter: "attempts"
 4.Ask user to input Parameter: "passing_yards"
 5.Ask user to input Parameter: "touchdown_passes"
-6. Calculation: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
+6. Calculation_QB: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
 + 2.375 – (25 * interceptions/attempts)]/6"
-7. Return calculation from step 3
+7. Return Calculation_QB
 
 
 Function Name: quidditch
@@ -27,8 +41,8 @@ Return: Calculation of Parameters
 Algorithm:
 1. Ask user to input Parameter: "goal"
 1. Ask user to input Parameter: "snitch"
-2. Calculation: "(10(goal)) + (30(snitch))"
-3. Return calculation from step 3
+2. Calculation_Quid: "(10(goal)) + (30(snitch))"
+3. Return Calculation_Quid
 
 
 Function Name: gymnast
@@ -42,8 +56,8 @@ Algorithm:
 1. Ask user to input Parameter: "execution4"
 1. Ask user to input Parameter: "execution5"
 2. Take out the max exeuction and the min execution
-3. Calculation: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
-4. Return calculation from step 3
+3. Calculation_Gym: "(difficulty) + ((execution1 + execution2 + execution3 + execution4 + execution5) / (5))"
+4. Return Calculation_Gym
 
 Function Name: error
 Parameters: None
@@ -58,11 +72,19 @@ Algorithm:
 1. Tell the user the purpose of the program: "This program will calculate various sports statistics
 for the user, based on the user’s choice of sport."
 2. Call menu
-3. Call sport gymnast based on menu
-4. Call sport quidditch based on menu
-5. Call sport football based on menu
-6. Output the results to the user: "Your score is.. "
-7. If football is equal to 158.3
-    a. Output: "You are a perfect passer."
-8. Otherwise:
-    b. Output: "Sorry, you are not considered a perfect passer."
+3. Call error_check_menu
+4. If error_check_menu is equal to "incorrect":
+    a. Output error message: "Sorry your answer is invalid, please try again."
+    b. Go back to Step 2 #In main function
+5. If menu_choice is equal to "football":
+    a. Call football
+    b. Output: ("Your football QB rating is", Calculation_QB)
+    c. If Calculation_QB is equal to 158.3
+        i.Output: "You are a perfect passer."
+    d. Otherwise:
+        a. Output: "Sorry, you are not considered a perfect passer."
+6. Otherwise/If menu_choice is equal to "quidditch":
+    a. Call quidditch
+    b. Output: ("Your score for Quidditch is", Calculation_Quid)
+
+
