@@ -44,7 +44,8 @@ Algorithm:
 3. If valid:
     a. Calculation_Quid: "(10(goal)"
 4. Otherwise:
-    a. return 0
+    a. Output: "Error! Invalid Answer."
+    b. return 0
 5. Ask user to input: "Did you catch the Golden snitch, yes or no?"
 6. If snitch is equal to "yes":
     a. Add 30 to Calculation_Quid
@@ -72,21 +73,52 @@ Return: Calculation of Parameters
 Algorithm:
 1. Ask user to input Parameter: "difficulty"
 2. Call int_check to check for valid interger
-3. Ask user to input Parameter: "execution1"
-4. Call int_check to check for valid interger
-5. Ask user to input Parameter: "execution2"
+3. If valid:
+    a. Continue on
+4. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. return 0
+5. Ask user to input Parameter: "execution1"
 6. Call int_check to check for valid interger
-7. Ask user to input Parameter: "execution3"
-8. Call int_check to check for valid interger
-9. Ask user to input Parameter: "execution4"
+7. If valid:
+    a. Continue on
+8. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. return 0
+9. Ask user to input Parameter: "execution2"
 10. Call int_check to check for valid interger
-11. Ask user to input Parameter: "execution5"
-12. Call int_check to check for valid interger
-13. Check for min_value for calculation
-14. Check for max-value for calculation
-15 Calculate average of executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
-max_value)) / 5 ""
-16. Return Calculation_Gym
+11. If valid:
+    a. Continue on
+12. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. return 0
+13. Ask user to input Parameter: "execution3"
+14. Call int_check to check for valid interger
+15. If valid:
+    a. Continue on
+16. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. return 0
+17. Ask user to input Parameter: "execution4"
+18. Call int_check to check for valid interger
+19. If valid:
+    a. Continue on
+20. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. return 0
+21. Ask user to input Parameter: "execution5"
+22. Call int_check to check for valid interger
+23. If valid:
+    a. Continue on
+24. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. return 0
+25. Check for min_value for calculation
+26. Check for max-value for calculation
+27. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
+max_value)) / 5 "
+28. Calculate_Gym = "(difficulty) + (average_executions)"
+29. Return Calculation_Gym
 
 
 Function Name: calculate_min
@@ -145,6 +177,7 @@ on the user’s choice of sport."
 7. Otherwise:
     a. Call gymnast
     b. Output: ("Your final score is", Calculation_Gym)
+8. Output: "Thank you for using this program."
 
 
 
