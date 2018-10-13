@@ -9,16 +9,16 @@ Algorithm:
 
 Function Name: error_check_menu
 Parameters: menu_choice
-Return: correct_or_incorrect
+Return: true_or_false
 Algorithm:
 1. If menu_choice is equal to "football" :
-    a. return correct
+    a. return true
 2. Otherwise/If menu_choice is equal to "quidditch" :
-    a. return correct
+    a. return true
 3. Otherwise/If menu_choice is equal to "gymnast" :
-    a. return correct
+    a. return true
 4. Otherwise:
-    a. return incorrect
+    a. return false
 
 
 Function Name: football
@@ -40,9 +40,26 @@ Parameters: goal, snitch
 Return: Calculation of Parameters
 Algorithm:
 1. Ask user to input Parameter: "goal"
-1. Ask user to input Parameter: "snitch"
-2. Calculation_Quid: "(10(goal)) + (30(snitch))"
-3. Return Calculation_Quid
+2. Call int_function to check for valid interger
+3. If valid:
+    a. Calculation_Quid: "(10(goal)"
+4. Otherwise:
+    a. return 0
+5. Ask user to input: "Did you catch the Golden snitch, yes or no?"
+6. If snitch is equal to "yes":
+    a. Add 30 to Calculation_Quid
+7. Otherwise/If snitch is equal to "no":
+    a. Do nothing
+8. Otherwise:
+    a. Output: "Error! Invalid Answer."
+    b. Return 0
+9. Return Calculation_Quid
+
+Function Name: int_check
+Parameters: value
+Return: true_or_false
+Algorithm:
+1.
 
 
 Function Name: gymnast
@@ -98,7 +115,7 @@ Algorithm:
 on the user’s choice of sport."
 2. Call menu
 3. Call error_check_menu
-4. If error_check_menu is equal to "incorrect":
+4. If error_check_menu is equal to "false":
     a. Output error message: "Sorry your answer is invalid, please try again."
     b. Go back to Step 2 #In main function
 5. If menu_choice is equal to "football":
