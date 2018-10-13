@@ -9,7 +9,7 @@ Algorithm:
 
 Function Name: error_check_menu
 Parameters: menu_choice
-Return: true_or_false
+Return: true or false
 Algorithm:
 1. If menu_choice is equal to "football" :
     a. return true
@@ -40,7 +40,7 @@ Parameters: goal, snitch
 Return: Calculation of Parameters
 Algorithm:
 1. Ask user to input Parameter: "goal"
-2. Call int_function to check for valid interger
+2. Call int_check to check for valid interger
 3. If valid:
     a. Calculation_Quid: "(10(goal)"
 4. Otherwise:
@@ -55,11 +55,15 @@ Algorithm:
     b. Return 0
 9. Return Calculation_Quid
 
+
 Function Name: int_check
 Parameters: value
-Return: true_or_false
+Return: true or false
 Algorithm:
-1.
+1. If value is int:
+    a. Return true
+2. Otherwise:
+    a. Return False
 
 
 Function Name: gymnast
@@ -106,6 +110,7 @@ Algorithm:
 5. If execuation5 is greater than max_value:
     a. Set max_value to execuation5
 6. Return max_value
+
 
 Function Name: Main
 Parameters: None
