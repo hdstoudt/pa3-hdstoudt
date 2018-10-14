@@ -20,6 +20,15 @@ def error_check_menu():
     else:
         return false
 
+#Function Name: int_check
+#Parameters: value
+#Return: true or false
+Algorithm:
+1. If int_check is int:
+    a. Return true
+2. Otherwise:
+    a. Return False
+
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
     interception = interceptions()
