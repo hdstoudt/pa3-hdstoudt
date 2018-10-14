@@ -14,14 +14,14 @@ def error_check_menu():
     else:
         return false
 
-def football():
-    interceptions = interceptions()
+def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
+    interception = interceptions()
     completion = completions()
-    attempts = attempts()
-    passing_yards = passing_yards()
-    touchdown_passes = touchdown_passes()
-    football_score = (100 * [5 (completion / attempts - 0.3) + 0.25(passing_yards / attempts - 3) + 20 (touchdown_passes
-                    / attempts) + 2.375 - (25 * interceptions / attempts)] / 6)
+    attempt = attempts()
+    passing_yard = passing_yards()
+    touchdown_passess = touchdown_passes()
+    football_score = (100 * [5 (completion / attempt - 0.3) + 0.25(passing_yard / attempt - 3) + 20 (touchdown_passess
+                    / attempt) + 2.375 - (25 * interception / attempt)] / 6)
     return football_score
 
 def interceptions():
@@ -45,13 +45,11 @@ def touchdown_passes():
     return touchdown_passes
 
 
+def main():
+    print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
 
 
 
-#Function Name: Main
-#Parameters: None
-#Return: None
-#Algorithm:
 #1. Tell the user the purpose of the program: "This program will calculate various sports statistics for the user, based
 #on the user’s choice of sport."
 #2. Call menu
