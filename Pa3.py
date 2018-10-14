@@ -1,6 +1,6 @@
 def menu():
     print("What type of sport: football, quidditch, gymnast:")
-    sport = input("Please enter a valid sport type.")
+    sport = str(input("Please enter a valid sport type.")
     return menu_choice
 
 
@@ -47,6 +47,12 @@ def touchdown_passes():
 
 def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
+    menu = menu()
+    error_check_menu = error_check_menu()
+    if error_check_menu == "false"
+        print("Sorry your answer is invalid, please try again.")
+        ## go back to menu step 2
+    if menu_choice == "football"
 
 
 
