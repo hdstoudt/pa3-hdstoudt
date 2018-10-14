@@ -14,6 +14,15 @@ def error_check_menu():
     else:
         return false
 
+def football():
+    interceptions = interceptions()
+    completion = completions()
+    attempts = attempts()
+    passing_yards = passing_yards()
+    touchdown_passes = touchdown_passes()
+    football_score = (100 * [5 (completion / attempts - 0.3) + 0.25(passing_yards / attempts - 3) + 20 (touchdown_passes
+                    / attempts) + 2.375 - (25 * interceptions / attempts)] / 6)
+    return football_score
 
 def interceptions():
     interceptions = int(input("Please enter your number of interceptions made."))
@@ -35,16 +44,6 @@ def touchdown_passes():
     touchdown_passes = int(input("Please enter your number of touchdown passes made."))
     return touchdown_passes
 
-
-def football():
-    interceptions = interceptions()
-    completion = completions()
-    attempts = attempts()
-    passing_yards = passing_yards()
-    touchdown_passes = touchdown_passes()
-    football_score = (100 * [5 (completion / attempts - 0.3) + 0.25(passing_yards / attempts - 3) + 20 (touchdown_passes
-                    / attempts) + 2.375 - (25 * interceptions / attempts)] / 6)
-    return football_score
 
 
 
