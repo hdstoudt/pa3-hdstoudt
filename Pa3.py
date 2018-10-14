@@ -55,27 +55,15 @@ def main():
     if menu_choice == "football"
         football()
         print("Your football QB rating is", football_score)
-        if football_score
+        if football_score == 158.3
+            print("You are a perfect passer.")
+        else:
+            print("Sorry, you are not considered a perfect passer.")
+    elif menu_choice == "quidditch"
+        quidditch()
+        print("Your score for Quidditch is", quidditch_score)
+    else:
+        gymnast()
+        print("Your final score is", gym_score)
+    print("Thank you for using this program")
 
-
-#1. Tell the user the purpose of the program: "This program will calculate various sports statistics for the user, based
-#on the user’s choice of sport."
-#2. Call menu
-#3. Call error_check_menu
-#4. If error_check_menu is equal to "false":
-    #a. Output error message: "Sorry your answer is invalid, please try again."
-   # b. Go back to Step 2 #In main function
-#5. If menu_choice is equal to "football":
-    #a. Call football
-    #b. Output: ("Your football QB rating is", Calculation_QB)
-    #c. If Calculation_QB is equal to 158.3
-       # i.Output: "You are a perfect passer."
-    #d. Otherwise:
-     #   a. Output: "Sorry, you are not considered a perfect passer."
-#6. Otherwise/If menu_choice is equal to "quidditch":
-  #  a. Call quidditch
- #   b. Output: ("Your score for Quidditch is", Calculation_Quid)
-#7. Otherwise:
-  #  a. Call gymnast
-  #  b. Output: ("Your final score is", Calculation_Gym)
-#8. Output: "Thank you for using this program."
