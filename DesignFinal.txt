@@ -23,7 +23,7 @@ Algorithm:
 
 Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
-Return: Calculation of Parameters
+Return: football_score
 Algorithm:
 1. Ask user to input Parameter: "interceptions"
 2. Ask user to input Parameter: "completions"
@@ -37,12 +37,12 @@ Algorithm:
 
 Function Name: quidditch
 Parameters: goal, snitch
-Return: Calculation of Parameters
+Return: quidditch_score
 Algorithm:
 1. Ask user to input Parameter: "goal"
 2. Call int_check to check for valid interger
 3. If valid:
-    a. Calculation_Quid: "(10(goal)"
+    a. quidditch_score: "(10(goal)"
 4. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
@@ -54,7 +54,7 @@ Algorithm:
 8. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. Return 0
-9. Return Calculation_Quid
+9. Return quidditch_score
 
 
 Function Name: int_check
@@ -166,14 +166,14 @@ on the user’s choice of sport."
     b. Go back to Step 2 #In main function
 5. If menu_choice is equal to "football":
     a. Call football
-    b. Output: ("Your football QB rating is", Calculation_QB)
-    c. If Calculation_QB is equal to 158.3
+    b. Output: ("Your football QB rating is", football_score)
+    c. If football_score is equal to 158.3
         i.Output: "You are a perfect passer."
     d. Otherwise:
         a. Output: "Sorry, you are not considered a perfect passer."
 6. Otherwise/If menu_choice is equal to "quidditch":
     a. Call quidditch
-    b. Output: ("Your score for Quidditch is", Calculation_Quid)
+    b. Output: ("Your score for Quidditch is", quidditch_score)
 7. Otherwise:
     a. Call gymnast
     b. Output: ("Your final score is", Calculation_Gym)

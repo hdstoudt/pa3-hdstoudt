@@ -49,11 +49,13 @@ def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
     menu = menu()
     error_check_menu = error_check_menu()
-    if error_check_menu == "false"
+    if error_check_menu == false
         print("Sorry your answer is invalid, please try again.")
         ## go back to menu step 2
     if menu_choice == "football"
-
+        football()
+        print("Your football QB rating is", football_score)
+        if football_score
 
 
 #1. Tell the user the purpose of the program: "This program will calculate various sports statistics for the user, based
