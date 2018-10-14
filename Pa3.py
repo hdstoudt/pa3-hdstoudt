@@ -1,6 +1,12 @@
 def menu():
     print("What type of sport: football, quidditch, gymnast:")
-    sport = str(input("Please enter a valid sport type.")
+    menu_choice = input("Please enter a valid sport type.")
+    if menu_choice.lower() == "football":
+        menu_choice = football
+    elif menu_choice.lower() == "quidditch":
+        menu_choice = quidditch
+    else:
+        menu_choice.lower() = "gymnast"
     return menu_choice
 
 
@@ -13,6 +19,7 @@ def error_check_menu():
         return true
     else:
         return false
+
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
     interception = interceptions()
@@ -44,10 +51,31 @@ def touchdown_passes():
     touchdown_passes = int(input("Please enter your number of touchdown passes made."))
     return touchdown_passes
 
+def quidditch():
+
+
+
+
+#1. Ask user to input Parameter: "goal"
+#2. Call int_check to check for valid interger
+#3. If valid:
+#    a. quidditch_score: "(10(goal)"
+#4. Otherwise:
+#    a. Output: "Error! Invalid Answer."
+#    b. return 0
+#5. Ask user to input: "Did you catch the Golden snitch, yes or no?"
+#6. If snitch is equal to "yes":
+#    a. Add 30 to Calculation_Quid
+#7. Otherwise/If snitch is equal to "no":
+#    a. Do nothing
+#8. Otherwise:
+#    a. Output: "Error! Invalid Answer."
+#    b. Return 0
+#9. Return quidditch_score
 
 def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
-    menu = menu()
+    menu_choice = menu()
     error_check_menu = error_check_menu()
     if error_check_menu == false
         print("Sorry your answer is invalid, please try again.")
@@ -67,3 +95,6 @@ def main():
         print("Your final score is", gym_score)
     print("Thank you for using this program")
 
+
+# Run the Program
+main()
