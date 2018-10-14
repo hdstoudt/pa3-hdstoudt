@@ -62,7 +62,7 @@ Function Name: int_check
 Parameters: value
 Return: true or false
 Algorithm:
-1. If value is int:
+1. If int_check is int:
     a. Return true
 2. Otherwise:
     a. Return False

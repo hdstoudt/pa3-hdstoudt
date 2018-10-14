@@ -27,6 +27,7 @@ def football(interceptions, completions, attempts, passing_yards, touchdown_pass
     attempt = attempts()
     passing_yard = passing_yards()
     touchdown_passess = touchdown_passes()
+    int_check()
     football_score = (100 * [5 (completion / attempt - 0.3) + 0.25(passing_yard / attempt - 3) + 20 (touchdown_passess
                     / attempt) + 2.375 - (25 * interception / attempt)] / 6)
     return football_score
@@ -52,26 +53,31 @@ def touchdown_passes():
     return touchdown_passes
 
 def quidditch():
+    goal = goals()
+    int_check()
+    if int_check == "true":
+        quidditch_score = 10(goal)
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    snitch = snitch()
+    if snitch == "yes"
+        quidditch_score += 30
+    elif snitch =="no":
+        quidditch_score += 0
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    return quidditch_score
 
+def goals():
+    goal = int(input("Please enter your number of goals made."))
+    return goal
 
+def snitch():
+    snitch = int(input("Did you catch the golden snitch? yes or no?"))
+    return snitch
 
-
-#1. Ask user to input Parameter: "goal"
-#2. Call int_check to check for valid interger
-#3. If valid:
-#    a. quidditch_score: "(10(goal)"
-#4. Otherwise:
-#    a. Output: "Error! Invalid Answer."
-#    b. return 0
-#5. Ask user to input: "Did you catch the Golden snitch, yes or no?"
-#6. If snitch is equal to "yes":
-#    a. Add 30 to Calculation_Quid
-#7. Otherwise/If snitch is equal to "no":
-#    a. Do nothing
-#8. Otherwise:
-#    a. Output: "Error! Invalid Answer."
-#    b. Return 0
-#9. Return quidditch_score
 
 def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
