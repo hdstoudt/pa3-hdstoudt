@@ -86,6 +86,8 @@ def snitch():
     return snitch
 
 def gymnast(difficulty, execution1, execution2, execution3, execution4, execution5):
+    difficulty = difficulty()
+    int_check()
 
 Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
@@ -144,6 +146,9 @@ def difficulty():
     difficulty = int(input("Please enter difficulty score."))
     return difficulty
 
+def execution():
+    execution = int(input("Please enter execution score."))
+    return execution
 
 def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
