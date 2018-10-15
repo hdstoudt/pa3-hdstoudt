@@ -30,11 +30,35 @@ def int_check(int):
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
     interception = interceptions()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
     completion = completions()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
     attempt = attempts()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
     passing_yard = passing_yards()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
     touchdown_passess = touchdown_passes()
-    int_check()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
     football_score = (100 * [5 (completion / attempt - 0.3) + 0.25(passing_yard / attempt - 3) + 20 (touchdown_passess
                     / attempt) + 2.375 - (25 * interception / attempt)] / 6)
     return football_score
@@ -87,19 +111,42 @@ def snitch():
 
 def gymnast(difficulty, execution1, execution2, execution3, execution4, execution5):
     difficulty = difficulty()
-    int_check()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    execution1 = execution()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    execution2 = execution()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    execution3 = execution()
+    if int_check() = true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    execution4 = execution()
+    if int_check() == true
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    execution5 = execution()
+        if int_check() == true:
+            continue
+        else:
+            print("Error! Invalid Answer.")
+            return 0
 
-Function Name: gymnast
-Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
-Return: Calculation of Parameters
-Algorithm:
-1. Ask user to input Parameter: "difficulty"
-2. Call int_check to check for valid interger
-3. If valid:
-    a. Continue on
-4. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
 5. Ask user to input Parameter: "execution1"
 6. Call int_check to check for valid interger
 7. If valid:
