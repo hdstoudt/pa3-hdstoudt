@@ -83,6 +83,7 @@ def touchdown_passes():
     touchdown_passes = int(input("Please enter your number of touchdown passes made."))
     return touchdown_passes
 
+
 def quidditch(goals, snitch):
     goals = goals()
     int_check()
@@ -108,6 +109,7 @@ def goals():
 def snitch():
     snitch = int(input("Did you catch the golden snitch? yes or no?"))
     return snitch
+
 
 def gymnast(difficulty, execution1, execution2, execution3, execution4, execution5):
     difficulty = difficulty()
@@ -146,14 +148,11 @@ def gymnast(difficulty, execution1, execution2, execution3, execution4, executio
         else:
             print("Error! Invalid Answer.")
             return 0
-
-
-25. Check for min_value for calculation
-26. Check for max-value for calculation
-27. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
-max_value)) / 5 "
-28. Calculate_Gym = "(difficulty) + (average_executions)"
-29. Return Calculation_Gym
+    min_value = min_value()
+    max_value = max-value()
+    average_executions = ((execution1 + execution2 + execution3 + execution4 + exeuction5) - (min_value + max_value)) / 5
+    calculate_gym = (difficulty) + (average_executions)
+    return calculate_gym
 
 def difficulty():
     difficulty = int(input("Please enter difficulty score."))
@@ -162,6 +161,31 @@ def difficulty():
 def execution():
     execution = int(input("Please enter execution score."))
     return execution
+
+def calculate_min(execuation1, execuation2, execuation3, execuation4, execuation5):
+    min_value = execution1
+    if execuation2 < min_value:
+        min_value = execuation2
+    if execuation3 < min_value:
+        min_value = execuation3
+    if execuation4 < min_value:
+        min_value = execuation4
+    if execuation5 < min_value:
+        min_value = execuation5
+    return min_value
+
+def calculate_max(execuation1, execuation2, execuation3, execuation4, execuation5):
+    max_value = execution1
+    if execuation2 > max_value:
+        max_value = execuation2
+    if execuation3 > max_value:
+        max_value = execuation3
+    if execuation4 > max_value:
+        max_value = execuation4
+    if execuation5 > max_value:
+        max_value = execuation5
+    return max_value
+
 
 def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
