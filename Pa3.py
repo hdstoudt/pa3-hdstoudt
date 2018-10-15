@@ -1,28 +1,28 @@
 def menu():
     print("What type of sport: football, quidditch, gymnast:")
     menu_choice = input("Please enter a valid sport type.")
-    if menu_choice.lower() == "football":
+    if menu_choice  == "football":
         menu_choice = football
-    elif menu_choice.lower() == "quidditch":
+    elif menu_choice == "quidditch":
         menu_choice = quidditch
     else:
-        menu_choice.lower() = "gymnast"
+        menu_choice = "gymnast"
     return menu_choice
 
 
 def error_check_menu(menu_choice):
-    if menu_choice == "football":
+    if menu_choice.lower() == "football":
         return true
-    elif menu_choice == "quidditch":
+    elif menu_choice.lower() == "quidditch":
         return true
-    elif menu_choice == "gymnast":
+    elif menu_choice.lower() == "gymnast":
         return true
     else:
         return false
 
 
 def int_check(int):
-    if int_check == int
+    if int_check == int:
         return true
     else:
         return false
@@ -30,31 +30,31 @@ def int_check(int):
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
     interception = interceptions()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     completion = completions()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     attempt = attempts()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     passing_yard = passing_yards()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     touchdown_passess = touchdown_passes()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
@@ -93,7 +93,7 @@ def quidditch(goals, snitch):
         print("Error! Invalid Answer.")
         return 0
     snitch = snitch()
-    if snitch == "yes"
+    if snitch == "yes":
         quidditch_score += 30
     elif snitch =="no":
         quidditch_score += 0
@@ -113,41 +113,41 @@ def snitch():
 
 def gymnast(difficulty, execution1, execution2, execution3, execution4, execution5):
     difficulty = difficulty()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     execution1 = execution()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     execution2 = execution()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     execution3 = execution()
-    if int_check() = true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     execution4 = execution()
-    if int_check() == true
+    if int_check() == true:
         continue
     else:
         print("Error! Invalid Answer.")
         return 0
     execution5 = execution()
-        if int_check() == true:
-            continue
-        else:
-            print("Error! Invalid Answer.")
-            return 0
+    if int_check() == true:
+        continue
+    else:
+        print("Error! Invalid Answer.")
+        return 0
     min_value = min_value()
     max_value = max-value()
     average_executions = ((execution1 + execution2 + execution3 + execution4 + exeuction5) - (min_value + max_value)) / 5
@@ -191,17 +191,17 @@ def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
     menu_choice = menu()
     error_check_menu = error_check_menu()
-    if error_check_menu == false
+    if error_check_menu == false:
         print("Sorry your answer is invalid, please try again.")
         ## Go back to menu_choice ##
-    if menu_choice == "football"
+    if menu_choice == "football":
         football()
         print("Your football QB rating is", football_score)
-        if football_score == 158.3
+        if football_score == 158.3:
             print("You are a perfect passer.")
         else:
             print("Sorry, you are not considered a perfect passer.")
-    elif menu_choice == "quidditch"
+    elif menu_choice == "quidditch":
         quidditch()
         print("Your score for Quidditch is", quidditch_score)
     else:
