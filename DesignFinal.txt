@@ -27,6 +27,16 @@ Algorithm:
     a. return false
 
 
+Function Name: int_check
+Parameters: int
+Return: true or false
+Algorithm:
+1. If int_check is int:
+    a. Return true
+2. Otherwise:
+    a. Return False
+
+
 Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
 Return: football_score
@@ -112,98 +122,84 @@ Return: quidditch_score
 Algorithm:
 1. Call goal function
 2. Call int_check to check for valid interger
-3. If int_check is equal to
+3. If int_check is equal to true:
     a. quidditch_score: "(10(goal)"
 4. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-5. Ask user to input: "Did you catch the Golden snitch, yes or no?"
+5. Call snitch function
 6. If snitch is equal to "yes":
-    a. Add 30 to Calculation_Quid
+    a. Add 30 to quidditch_score
 7. Otherwise/If snitch is equal to "no":
-    a. Do nothing
+    a. Add 0 to quidditch_score
 8. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. Return 0
 9. Return quidditch_score
 
-def quidditch(goals, snitch):
-    goals = goals()
-    int_check()
-    if int_check == "true":
-        quidditch_score = 10(goals)
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    snitch = snitch()
-    if snitch == "yes":
-        quidditch_score += 30
-    elif snitch =="no":
-        quidditch_score += 0
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    return quidditch_score
-
-
-Function Name: int_check
-Parameters: int
-Return: true or false
+Function Name: goals
+Parameters: None
+Return: goals
 Algorithm:
-1. If int_check is int:
-    a. Return true
-2. Otherwise:
-    a. Return False
+1. Ask user to input goals: ("Please enter your number of goals made.")
+2. Return goals
+
+Function Name: snitch
+Parameters: None
+Return: snitch
+Algorithm:
+1. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
+2. Return snitch
 
 
 Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
 Return: Calculation of Parameters
 Algorithm:
-1. Ask user to input Parameter: "difficulty"
+1. Call difficulty function
 2. Call int_check to check for valid interger
 3. If valid:
     a. Continue on
 4. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-5. Ask user to input Parameter: "execution1"
+5. Call execution1 function
 6. Call int_check to check for valid interger
 7. If valid:
     a. Continue on
 8. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-9. Ask user to input Parameter: "execution2"
+9. Call execution2 function
 10. Call int_check to check for valid interger
 11. If valid:
     a. Continue on
 12. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-13. Ask user to input Parameter: "execution3"
+13. Call execution3 function
 14. Call int_check to check for valid interger
 15. If valid:
     a. Continue on
 16. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-17. Ask user to input Parameter: "execution4"
+17. Call execution4 function
 18. Call int_check to check for valid interger
 19. If valid:
     a. Continue on
 20. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-21. Ask user to input Parameter: "execution5"
+21. Call execution5 function
 22. Call int_check to check for valid interger
 23. If valid:
     a. Continue on
 24. Otherwise:
     a. Output: "Error! Invalid Answer."
     b. return 0
-25. Check for min_value for calculation
-26. Check for max-value for calculation
+25. Call for min_value for calculation
+26. Call for max-value for calculation
 27. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
 max_value)) / 5 "
 28. Calculate_Gym = "(difficulty) + (average_executions)"
@@ -267,6 +263,9 @@ on the user’s choice of sport."
     a. Call gymnast
     b. Output: ("Your final score is", Calculation_Gym)
 8. Output: "Thank you for using this program."
+
+## Run the Program ##
+main()
 
 
 
