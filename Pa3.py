@@ -147,41 +147,7 @@ def gymnast(difficulty, execution1, execution2, execution3, execution4, executio
             print("Error! Invalid Answer.")
             return 0
 
-5. Ask user to input Parameter: "execution1"
-6. Call int_check to check for valid interger
-7. If valid:
-    a. Continue on
-8. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-9. Ask user to input Parameter: "execution2"
-10. Call int_check to check for valid interger
-11. If valid:
-    a. Continue on
-12. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-13. Ask user to input Parameter: "execution3"
-14. Call int_check to check for valid interger
-15. If valid:
-    a. Continue on
-16. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-17. Ask user to input Parameter: "execution4"
-18. Call int_check to check for valid interger
-19. If valid:
-    a. Continue on
-20. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-21. Ask user to input Parameter: "execution5"
-22. Call int_check to check for valid interger
-23. If valid:
-    a. Continue on
-24. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
+
 25. Check for min_value for calculation
 26. Check for max-value for calculation
 27. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
