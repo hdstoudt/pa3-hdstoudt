@@ -22,7 +22,8 @@ def error_check_menu(menu_choice):
 
 
 def int_check(int):
-    if int_check == int:
+    int_check
+    if int_check == int
         return true
     else:
         return false

@@ -3,8 +3,14 @@ Parameters: None
 Return: menu_choice
 Algorithm:
 1. Output options: "What type of sport: football, quidditch, gymnast:"
-2. Ask user to choose
-3. Return menu_choice
+2. Ask user to choose: menu_choice variable("Please enter a valid sport type.")
+3. Otherwise/If menu_choice is equal to "football":
+    a. menu_choice = football
+4. Otherwise/If menu_choice is equal to "quidditch":
+    a. menu_choice = quidditch
+5. Otherwise:
+    a. menu_choice = gymnast
+6. Return menu_choice
 
 
 Function Name: error_check_menu
@@ -25,24 +31,88 @@ Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
 Return: football_score
 Algorithm:
-1. Ask user to input Parameter: "interceptions"
-2. Ask user to input Parameter: "completions"
-3. Ask user to input Parameter: "attempts"
-4. Ask user to input Parameter: "passing_yards"
-5. Ask user to input Parameter: "touchdown_passes"
+1. Call interceptions function
+2. Call int_check to check for valid interger
+3. If int_check == true:
+    a. continue on
+4. Otherwise:
+    a. Output: ("Error! Invalid Answer.")
+    b. Return 0
+5. Call completions function
 6. Call int_check to check for valid interger
-7. football_score: "100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) + 20(touchdown_passes/attempts)
-+ 2.375 – (25 * interceptions/attempts)]/6"
-8. Return football_score
+7. If int_check == true:
+    a. continue on
+8. Otherwise:
+    a. Output: ("Error! Invalid Answer.")
+    b. Return 0
+9. Call attempts function
+10. Call int_check to check for valid interger
+11. If int_check == true:
+    a. continue on
+12. Otherwise:
+    a. Output: ("Error! Invalid Answer.")
+    b. Return 0
+13. Call passing_yards function
+14. Call int_check to check for valid interger
+15. If int_check == true:
+    a. continue on
+16. Otherwise:
+    a. Output: ("Error! Invalid Answer.")
+    b. Return 0
+17. Call touchdown_passes function
+18. Call int_check to check for valid interger
+19. If int_check == true:
+    a. continue on
+20. Otherwise:
+    a. Output: ("Error! Invalid Answer.")
+    b. Return 0
+21. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
+  20(touchdown_passes/attempts) + 2.375 – (25 * interceptions/attempts)]/6")
+22. Return football_score
+
+Function Name: interceptions
+Parameters: None
+Return: interceptions
+Algorithm:
+1. Ask user to input interceptions: ("Please enter your number of interceptions made.")
+2. Return interceptions
+
+Function Name: completions
+Parameters: None
+Return: completions
+Algorithm:
+1. Ask user to input completions: ("Please enter your number of completions made.")
+2. Return completions
+
+Function Name: attempts
+Parameters: None
+Return: attempts
+Algorithm:
+1. Ask user to input attempts: ("Please enter your number of attempts made.")
+2. Return attempts
+
+Function Name: passing_yards
+Parameters: None
+Return: passing_yards
+Algorithm:
+1. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
+2. Return passing_yards
+
+Function Name: touchdown_passes
+Parameters: None
+Return: touchdown_passes
+Algorithm:
+1. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
+2. Return touchdown_passes
 
 
 Function Name: quidditch
 Parameters: goal, snitch
 Return: quidditch_score
 Algorithm:
-1. Ask user to input Parameter: "goal"
+1. Call goal function
 2. Call int_check to check for valid interger
-3. If valid:
+3. If int_check is equal to
     a. quidditch_score: "(10(goal)"
 4. Otherwise:
     a. Output: "Error! Invalid Answer."
@@ -57,9 +127,27 @@ Algorithm:
     b. Return 0
 9. Return quidditch_score
 
+def quidditch(goals, snitch):
+    goals = goals()
+    int_check()
+    if int_check == "true":
+        quidditch_score = 10(goals)
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    snitch = snitch()
+    if snitch == "yes":
+        quidditch_score += 30
+    elif snitch =="no":
+        quidditch_score += 0
+    else:
+        print("Error! Invalid Answer.")
+        return 0
+    return quidditch_score
+
 
 Function Name: int_check
-Parameters: value
+Parameters: int
 Return: true or false
 Algorithm:
 1. If int_check is int:
