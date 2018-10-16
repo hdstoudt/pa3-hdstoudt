@@ -1,12 +1,6 @@
 def menu():
     print("What type of sport: football, quidditch, gymnast:")
     menu_choice = input("Please enter a valid sport type.")
-    if menu_choice  == "football":
-        menu_choice = football
-    elif menu_choice == "quidditch":
-        menu_choice = quidditch
-    else:
-        menu_choice = "gymnast"
     return menu_choice
 
 
@@ -27,6 +21,7 @@ def int_check(int):
         return true
     else:
         return false
+
 
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
@@ -155,13 +150,17 @@ def gymnast(difficulty, execution1, execution2, execution3, execution4, executio
     calculate_gym = (difficulty) + (average_executions)
     return calculate_gym
 
-def difficulty():
-    difficulty = int(input("Please enter difficulty score."))
-    return difficulty
-
 def execution():
     execution = int(input("Please enter execution score."))
     return execution
+
+def float_check(float):
+    float_check
+    if float_check == float
+        return true
+    else:
+        return false
+
 
 def calculate_min(execuation1, execuation2, execuation3, execuation4, execuation5):
     min_value = execution1

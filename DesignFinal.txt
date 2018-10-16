@@ -4,27 +4,7 @@ Return: menu_choice
 Algorithm:
 1. Output options: "What type of sport: football, quidditch, gymnast:"
 2. Ask user to choose: menu_choice variable("Please enter a valid sport type.")
-3. Otherwise/If menu_choice is equal to "football":
-    a. menu_choice = football
-4. Otherwise/If menu_choice is equal to "quidditch":
-    a. menu_choice = quidditch
-5. Otherwise:
-    a. menu_choice = gymnast
-6. Return menu_choice
-
-
-Function Name: error_check_menu
-Parameters: menu_choice
-Return: true or false
-Algorithm:
-1. If menu_choice is equal to "football" :
-    a. return true
-2. Otherwise/If menu_choice is equal to "quidditch" :
-    a. return true
-3. Otherwise/If menu_choice is equal to "gymnast" :
-    a. return true
-4. Otherwise:
-    a. return false
+3. Return menu_choice
 
 
 Function Name: int_check
@@ -41,170 +21,88 @@ Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
 Return: football_score
 Algorithm:
-1. Call interceptions function
-2. Call int_check to check for valid interger
-3. If int_check == true:
-    a. continue on
-4. Otherwise:
-    a. Output: ("Error! Invalid Answer.")
-    b. Return 0
-5. Call completions function
-6. Call int_check to check for valid interger
-7. If int_check == true:
-    a. continue on
-8. Otherwise:
-    a. Output: ("Error! Invalid Answer.")
-    b. Return 0
-9. Call attempts function
-10. Call int_check to check for valid interger
-11. If int_check == true:
-    a. continue on
-12. Otherwise:
-    a. Output: ("Error! Invalid Answer.")
-    b. Return 0
-13. Call passing_yards function
-14. Call int_check to check for valid interger
-15. If int_check == true:
-    a. continue on
-16. Otherwise:
-    a. Output: ("Error! Invalid Answer.")
-    b. Return 0
-17. Call touchdown_passes function
-18. Call int_check to check for valid interger
-19. If int_check == true:
-    a. continue on
-20. Otherwise:
-    a. Output: ("Error! Invalid Answer.")
-    b. Return 0
-21. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
-  20(touchdown_passes/attempts) + 2.375 – (25 * interceptions/attempts)]/6")
-22. Return football_score
-
-Function Name: interceptions
-Parameters: None
-Return: interceptions
-Algorithm:
 1. Ask user to input interceptions: ("Please enter your number of interceptions made.")
-2. Return interceptions
-
-Function Name: completions
-Parameters: None
-Return: completions
-Algorithm:
-1. Ask user to input completions: ("Please enter your number of completions made.")
-2. Return completions
-
-Function Name: attempts
-Parameters: None
-Return: attempts
-Algorithm:
-1. Ask user to input attempts: ("Please enter your number of attempts made.")
-2. Return attempts
-
-Function Name: passing_yards
-Parameters: None
-Return: passing_yards
-Algorithm:
-1. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
-2. Return passing_yards
-
-Function Name: touchdown_passes
-Parameters: None
-Return: touchdown_passes
-Algorithm:
-1. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
-2. Return touchdown_passes
+2. Call int_check to check for valid interger
+3. Return interceptions
+4. Ask user to input completions: ("Please enter your number of completions made.")
+5. Call int_check to check for valid interger
+6. Return completions
+7. Ask user to input attempts: ("Please enter your number of attempts made.")
+8. Call int_check to check for valid interger
+9. Return attempts
+10. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
+11. Call int_check to check for valid interger
+12. Return passing_yards
+13. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
+14. Call int_check to check for valid interger
+15. Return touchdown_passes
+16. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
+  20(touchdown_passes/attempts) + 2.375 – (25 * interceptions/attempts)]/6")
+17. Return football_score
 
 
 Function Name: quidditch
 Parameters: goal, snitch
 Return: quidditch_score
 Algorithm:
-1. Call goal function
-2. Call int_check to check for valid interger
-3. If int_check is equal to true:
-    a. quidditch_score: "(10(goal)"
-4. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-5. Call snitch function
-6. If snitch is equal to "yes":
-    a. Add 30 to quidditch_score
-7. Otherwise/If snitch is equal to "no":
-    a. Add 0 to quidditch_score
-8. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. Return 0
-9. Return quidditch_score
-
-Function Name: goals
-Parameters: None
-Return: goals
-Algorithm:
 1. Ask user to input goals: ("Please enter your number of goals made.")
-2. Return goals
-
-Function Name: snitch
-Parameters: None
-Return: snitch
-Algorithm:
-1. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
-2. Return snitch
+2. Call int_check to check for valid interger
+3. Return goal
+4. Calculate quidditch_score: "(10(goal)"
+5. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
+6. Call int_check to check for valid interger
+7. If snitch is equal to "yes"
+    a. Add 30 to quidditch_score
+8. Else:
+    a. Add 0 to quidditch_score
+9. Return snitch
+11. Return quidditch_score
 
 
 Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
 Return: Calculation of Parameters
 Algorithm:
-1. Call difficulty function
-2. Call int_check to check for valid interger
-3. If valid:
-    a. Continue on
-4. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-5. Call execution1 function
-6. Call int_check to check for valid interger
-7. If valid:
-    a. Continue on
-8. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-9. Call execution2 function
-10. Call int_check to check for valid interger
-11. If valid:
-    a. Continue on
-12. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-13. Call execution3 function
-14. Call int_check to check for valid interger
-15. If valid:
-    a. Continue on
-16. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-17. Call execution4 function
-18. Call int_check to check for valid interger
-19. If valid:
-    a. Continue on
-20. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-21. Call execution5 function
-22. Call int_check to check for valid interger
-23. If valid:
-    a. Continue on
-24. Otherwise:
-    a. Output: "Error! Invalid Answer."
-    b. return 0
-25. Call for min_value for calculation
-26. Call for max-value for calculation
-27. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
+1. Ask user to input difficulty: ("Please enter difficulty score.")
+2. Call float_check to check for valid float
+3. Return difficulty
+4. Call execution1 function
+5. Call float_check to check for valid float
+6. Return execution1
+7. Call execution2 function
+8. Call float_check to check for valid float
+9. Return execution2
+10. Call execution3 function
+11. Call float_check to check for valid float
+12. Return execution3
+13. Call execution4 function
+14. Call float_check to check for valid float
+15. Return execution4
+16. Call execution5 function
+17. Call float_check to check for valid float
+18. Return execution5
+19. Call for min_value for calculation
+20. Call for max-value for calculation
+21. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
 max_value)) / 5 "
-28. Calculate_Gym = "(difficulty) + (average_executions)"
-29. Return Calculation_Gym
+22. Calculate_Gym = "(difficulty) + (average_executions)"
+23. Return Calculation_Gym
 
+Function Name: execution
+Parameters: None
+Return: execution
+Algorithm:
+1. Ask user to input execution: ("Please enter execution score."))
+2. Return execution
+
+Function Name: float_check
+Parameters: float
+Return: true or false
+Algorithm:
+1. If float_check is float:
+    a. Return true
+2. Otherwise:
+    a. Return False
 
 Function Name: calculate_min
 Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
@@ -220,7 +118,6 @@ Algorithm:
 5. If execuation5 is less than min_value:
     a. Set min_value to execuation5
 6. Return min_value
-
 
 Function Name: calculate_max
 Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
