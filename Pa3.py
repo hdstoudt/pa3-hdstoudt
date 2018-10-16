@@ -1,7 +1,15 @@
-
-
-
-
+# Programmers: Hannah Stoudt
+# Course: CS151, Dr.Olsen
+# Date: 10/17/18
+# Pa Assignment: Number 3
+# Problem Statement: "This program will calculate various sports statistics for the user, based on the user’s choice of
+# sport."
+# Data In: sport type, football(interceptions, completion, attempt, passing yards, touchdown passess), quidditch(goals,
+#snitch), gymnast(difficulty score, execuation1 score, execuation2 score, execuation3 score, execuation4 score,
+# execuation5 score).
+# Data Out: Hogwarts House (Gryffindor, Hufflepuff, Ravenclaw, and Slytherin)
+# Other files needed: None
+# Credits: Programmers, the template for comments given by Dr. Olsen, and Harry Potter books for reference.
 
 
 def menu():
@@ -105,7 +113,6 @@ def main():
         gymnast = gymnast()
         print("Your final score is", gym_score)
     print("Thank you for using this program")
-    return main
 
 # Run the Program
 main()
