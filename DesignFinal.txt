@@ -48,9 +48,12 @@ Algorithm:
 6. Call int_check to check for valid interger
 7. If snitch is equal to "yes"
     a. Add 30 to quidditch_score
-8. Else:
+8. Otherwise/If snitch is equal to "no":
     a. Add 0 to quidditch_score
-11. Return quidditch_score
+9. Otherwise:
+    a. Output: ("Error! Invalid Answer.")
+    b. Go back to step 5
+10. Return quidditch_score
 
 
 Function Name: gymnast
@@ -122,6 +125,7 @@ on the user’s choice of sport."
     a. Call gymnast
     b. Output: ("Your final score is", Calculation_Gym)
 6. Output: "Thank you for using this program."
+7. Return main
 
 ## Run the Program ##
 main()

@@ -15,10 +15,15 @@ def int_check(int):
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
     interception = int(input("Please enter your number of interceptions made."))
+    int_check()
     completion= int(input("Please enter your number of completions made."))
+    int_check()
     attempt = int(input("Please enter your number of attempts made."))
+    int_check()
     passing_yard = int(input("Please enter your number of passing yards made."))
+    int_check()
     touchdown_passess = int(input("Please enter your number of touchdown passes made."))
+    int_check()
     football_score = (100 * [5 (completion / attempt - 0.3) + 0.25(passing_yard / attempt - 3) + 20 (touchdown_passess
                     / attempt) + 2.375 - (25 * interception / attempt)] / 6)
     return football_score
@@ -27,7 +32,6 @@ def football(interceptions, completions, attempts, passing_yards, touchdown_pass
 def quidditch(goals, snitch):
     goals = int(input("Please enter your number of goals made."))
     int_check()
-    return goals
     quidditch_score = 10(goals)
     snitch = int(input("Did you catch the golden snitch? yes or no?"))
     int_check()
@@ -37,7 +41,7 @@ def quidditch(goals, snitch):
         quidditch_score += 0
     else:
         print("Error! Invalid Answer.")
-        return 0
+        snitch = int(input("Did you catch the golden snitch? yes or no?"))
     return quidditch_score
 
 
@@ -110,7 +114,7 @@ def main():
         gymnast()
         print("Your final score is", gym_score)
     print("Thank you for using this program")
-
+    return main
 
 # Run the Program
 main()
