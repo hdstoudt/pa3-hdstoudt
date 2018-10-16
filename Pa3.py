@@ -1,7 +1,7 @@
 def menu():
     print("What type of sport: football, quidditch, gymnast:")
     menu_choice = input("Please enter a valid sport type.")
-    return menu_choice
+    return menu_choice.lower()
 
 
 def error_check_menu(menu_choice):
