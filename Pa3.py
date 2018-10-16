@@ -1,6 +1,7 @@
 def menu():
     print("What type of sport: football, quidditch, gymnast:")
     menu_choice = input("Please enter a valid sport type.")
+    while menu_choice
     return menu_choice.lower()
 
 
@@ -96,10 +97,6 @@ def calculate_max(execuation1, execuation2, execuation3, execuation4, execuation
 def main():
     print("This program will calculate various sports statistics for the user, based on the user’s choice of sport.")
     menu_choice = menu()
-    error_check_menu = error_check_menu()
-    if error_check_menu == false:
-        print("Sorry your answer is invalid, please try again.")
-        ## Go back to menu_choice ##
     if menu_choice == "football":
         football()
         print("Your football QB rating is", football_score)
