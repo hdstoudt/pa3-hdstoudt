@@ -46,15 +46,14 @@ Algorithm:
 2. Call int_check to check for valid interger
 4. Calculate quidditch_score: "(10(goal)"
 5. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
-6. Call int_check to check for valid interger
-7. If snitch is equal to "yes"
+6. If snitch is equal to "yes"
     a. Add 30 to quidditch_score
-8. Otherwise/If snitch is equal to "no":
+7. Otherwise/If snitch is equal to "no":
     a. Add 0 to quidditch_score
-9. Otherwise:
+8. Otherwise:
     a. Output: ("Error! Invalid Answer.")
     b. Go back to step 5
-10. Return quidditch_score
+9. Return quidditch_score
 
 
 Function Name: gymnast
