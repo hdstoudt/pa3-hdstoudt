@@ -7,9 +7,9 @@
 # Data In: sport type, football(interceptions, completion, attempt, passing yards, touchdown passess), quidditch(goals,
 #snitch), gymnast(difficulty score, execuation1 score, execuation2 score, execuation3 score, execuation4 score,
 # execuation5 score).
-# Data Out: Hogwarts House (Gryffindor, Hufflepuff, Ravenclaw, and Slytherin)
+# Data Out: Score for all sports, and for football whether or not you are a perfect passer
 # Other files needed: None
-# Credits: Programmers, the template for comments given by Dr. Olsen, and Harry Potter books for reference.
+# Credits: Ti-84 for test cases, the template for comments given by Dr. Olsen, and sports websites for reference.
 
 
 def menu():
