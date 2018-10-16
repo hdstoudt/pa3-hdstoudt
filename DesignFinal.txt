@@ -6,7 +6,7 @@ Algorithm:
 2. Ask user to choose: menu_choice variable("Please enter a valid sport type.")
 3. Return menu_choice
 
-
+## Need to fix this ## confused? ##
 Function Name: int_check
 Parameters: int
 Return: true or false
@@ -24,22 +24,17 @@ Return: football_score
 Algorithm:
 1. Ask user to input interceptions: ("Please enter your number of interceptions made.")
 2. Call int_check to check for valid interger
-3. Return interceptions
-4. Ask user to input completions: ("Please enter your number of completions made.")
-5. Call int_check to check for valid interger
-6. Return completions
-7. Ask user to input attempts: ("Please enter your number of attempts made.")
+3. Ask user to input completions: ("Please enter your number of completions made.")
+4. Call int_check to check for valid interger
+5. Ask user to input attempts: ("Please enter your number of attempts made.")
+6. Call int_check to check for valid interger
+7. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
 8. Call int_check to check for valid interger
-9. Return attempts
-10. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
-11. Call int_check to check for valid interger
-12. Return passing_yards
-13. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
-14. Call int_check to check for valid interger
-15. Return touchdown_passes
-16. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
+9. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
+10. Call int_check to check for valid interger
+11. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
   20(touchdown_passes/attempts) + 2.375 – (25 * interceptions/attempts)]/6")
-17. Return football_score
+12. Return football_score
 
 
 Function Name: quidditch
@@ -48,7 +43,6 @@ Return: quidditch_score
 Algorithm:
 1. Ask user to input goals: ("Please enter your number of goals made.")
 2. Call int_check to check for valid interger
-3. Return goal
 4. Calculate quidditch_score: "(10(goal)"
 5. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
 6. Call int_check to check for valid interger
@@ -56,7 +50,6 @@ Algorithm:
     a. Add 30 to quidditch_score
 8. Else:
     a. Add 0 to quidditch_score
-9. Return snitch
 11. Return quidditch_score
 
 
@@ -65,45 +58,17 @@ Parameters: difficulty, execution1, execution2, execution3, execution4, executio
 Return: Calculation of Parameters
 Algorithm:
 1. Ask user to input difficulty: ("Please enter difficulty score.")
-2. Call float_check to check for valid float
-3. Return difficulty
-4. Call execution1 function
-5. Call float_check to check for valid float
-6. Return execution1
-7. Call execution2 function
-8. Call float_check to check for valid float
-9. Return execution2
-10. Call execution3 function
-11. Call float_check to check for valid float
-12. Return execution3
-13. Call execution4 function
-14. Call float_check to check for valid float
-15. Return execution4
-16. Call execution5 function
-17. Call float_check to check for valid float
-18. Return execution5
-19. Call for min_value for calculation
-20. Call for max-value for calculation
-21. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
+2. Call execution1 function: ("Please enter execution1 score."))
+3. Call execution2 function: ("Please enter execution2 score."))
+4. Call execution3 function: ("Please enter execution3 score."))
+5. Call execution4 function: ("Please enter execution4 score."))
+6. Call execution5 function: ("Please enter execution5 score."))
+7. Call for min_value for calculation
+8. Call for max-value for calculation
+9. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
 max_value)) / 5 "
-22. Calculate_Gym = "(difficulty) + (average_executions)"
-23. Return Calculation_Gym
-
-Function Name: execution
-Parameters: None
-Return: execution
-Algorithm:
-1. Ask user to input execution: ("Please enter execution score."))
-2. Return execution
-
-Function Name: float_check
-Parameters: float
-Return: true or false
-Algorithm:
-1. If float_check is float:
-    a. Return true
-2. Otherwise:
-    a. output: ("Error, invalid entry!")
+10. Calculate_Gym = "(difficulty) + (average_executions)"
+11. Return Calculation_Gym
 
 Function Name: calculate_min
 Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
