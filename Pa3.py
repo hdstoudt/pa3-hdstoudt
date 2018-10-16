@@ -70,8 +70,9 @@ def gymnast():
     execuation4 = float(input("Please enter execuation4 score."))
     execuation5 = float(input("Please enter execuation5 score."))
     minimum = calculate_min(execuation1, execuation2, execuation3, execuation4, execuation5)
-    maximum = calculate_min(execuation1, execuation2, execuation3, execuation4, execuation5)
-    average_executions = ((execuation1, execuation2, execuation3, execuation4, execuation5) - (min_value + max_value)) / 3
+    maximum = calculate_max(execuation1, execuation2, execuation3, execuation4, execuation5)
+    average_executions = ((execuation1 + execuation2 + execuation3 + execuation4 + execuation5) - (minimum + maximum)) / 3
+
     calculate_gym = (difficulty) + (average_executions)
     return calculate_gym
 
