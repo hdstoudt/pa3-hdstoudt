@@ -4,13 +4,13 @@ def menu():
     return menu_choice.lower()
 
 
-def int_check(int):
-    int_check
-    if int_check == int
-        return true
-    else:
-        print("Error, invalid entry!")
-        return 0
+def int_check():
+    value = input("Please enter an integer.")
+    while not value.isdigit():
+        print("Error! Not an integer!")
+        value = input("Please enter an integer.")
+    value = int(value)
+    return value
 
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):

@@ -8,14 +8,15 @@ Algorithm:
 
 ## Need to fix this ## confused? ##
 Function Name: int_check
-Parameters: int
-Return: true or false
+Parameters: none
+Return: Interger value
 Algorithm:
-1. If int_check is int:
-    a. Return true
-2. Otherwise:
-    a. Return False
-3. Return int_check
+1. Input value
+2. While input does not equal an integer
+    a. Output: ("Error! Not an integer!")
+    b. Repeat step 1, prompting user to input integer.
+3. Typecast value to an int
+4. Return value
 
 
 Function Name: football
