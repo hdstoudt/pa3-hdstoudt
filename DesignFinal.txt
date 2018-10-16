@@ -103,7 +103,7 @@ Algorithm:
 1. If float_check is float:
     a. Return true
 2. Otherwise:
-    a. Return False
+    a. output: ("Error, invalid entry!")
 
 Function Name: calculate_min
 Parameters: execuation1, execuation2, execuation3, execuation4, execuation5

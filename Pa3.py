@@ -4,91 +4,33 @@ def menu():
     return menu_choice.lower()
 
 
-def error_check_menu(menu_choice):
-    if menu_choice.lower() == "football":
-        return true
-    elif menu_choice.lower() == "quidditch":
-        return true
-    elif menu_choice.lower() == "gymnast":
-        return true
-    else:
-        return false
-
-
 def int_check(int):
     int_check
     if int_check == int
         return true
     else:
-        return false
-
+        print("Error, invalid entry!")
+        return 0
 
 
 def football(interceptions, completions, attempts, passing_yards, touchdown_passes):
-    interception = interceptions()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    completion = completions()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    attempt = attempts()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    passing_yard = passing_yards()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    touchdown_passess = touchdown_passes()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    interception = int(input("Please enter your number of interceptions made."))
+    completion= int(input("Please enter your number of completions made."))
+    attempt = int(input("Please enter your number of attempts made."))
+    passing_yard = int(input("Please enter your number of passing yards made."))
+    touchdown_passess = int(input("Please enter your number of touchdown passes made."))
     football_score = (100 * [5 (completion / attempt - 0.3) + 0.25(passing_yard / attempt - 3) + 20 (touchdown_passess
                     / attempt) + 2.375 - (25 * interception / attempt)] / 6)
     return football_score
 
-def interceptions():
-    interceptions = int(input("Please enter your number of interceptions made."))
-    return interceptions
-
-def completions():
-    completions = int(input("Please enter your number of completions made."))
-    return completions
-
-def attempts():
-    attempts = int(input("Please enter your number of attempts made."))
-    return attempts
-
-def passing_yards():
-    passing_yards = int(input("Please enter your number of passing yards made."))
-    return passing_yards
-
-def touchdown_passes():
-    touchdown_passes = int(input("Please enter your number of touchdown passes made."))
-    return touchdown_passes
-
 
 def quidditch(goals, snitch):
-    goals = goals()
+    goals = int(input("Please enter your number of goals made."))
     int_check()
-    if int_check == "true":
-        quidditch_score = 10(goals)
-    else:
-        print("Error! Invalid Answer.")
-        return 0
-    snitch = snitch()
+    return goals
+    quidditch_score = 10(goals)
+    snitch = int(input("Did you catch the golden snitch? yes or no?"))
+    int_check()
     if snitch == "yes":
         quidditch_score += 30
     elif snitch =="no":
@@ -98,52 +40,20 @@ def quidditch(goals, snitch):
         return 0
     return quidditch_score
 
-def goals():
-    goals = int(input("Please enter your number of goals made."))
-    return goals
-
-def snitch():
-    snitch = int(input("Did you catch the golden snitch? yes or no?"))
-    return snitch
-
 
 def gymnast(difficulty, execution1, execution2, execution3, execution4, execution5):
-    difficulty = difficulty()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    difficulty = float(input("Please enter difficulty score."))
+    int_check()
     execution1 = execution()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    int_check()
     execution2 = execution()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    int_check()
     execution3 = execution()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    int_check()
     execution4 = execution()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    int_check()
     execution5 = execution()
-    if int_check() == true:
-        continue
-    else:
-        print("Error! Invalid Answer.")
-        return 0
+    int_check()
     min_value = min_value()
     max_value = max-value()
     average_executions = ((execution1 + execution2 + execution3 + execution4 + exeuction5) - (min_value + max_value)) / 5
@@ -153,14 +63,6 @@ def gymnast(difficulty, execution1, execution2, execution3, execution4, executio
 def execution():
     execution = int(input("Please enter execution score."))
     return execution
-
-def float_check(float):
-    float_check
-    if float_check == float
-        return true
-    else:
-        return false
-
 
 def calculate_min(execuation1, execuation2, execuation3, execuation4, execuation5):
     min_value = execution1
