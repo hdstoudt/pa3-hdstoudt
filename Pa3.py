@@ -15,7 +15,7 @@
 # Parameter:
 # Return:
 
-# Purpose:
+# Purpose: menu,
 # Parameter:
 # Return:
 def menu():
