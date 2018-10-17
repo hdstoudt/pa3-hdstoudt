@@ -11,7 +11,13 @@
 # Other files needed: None
 # Credits: Ti-84 for test cases, the template for comments given by Dr. Olsen, and sports websites for reference.
 
+# Purpose:
+# Parameter:
+# Return:
 
+# Purpose:
+# Parameter:
+# Return:
 def menu():
     menu_choice = input("Please enter a valid sport type: football, quidditch, or gymnast.")
     return menu_choice.lower()
