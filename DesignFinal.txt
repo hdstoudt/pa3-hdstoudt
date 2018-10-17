@@ -26,7 +26,7 @@ Algorithm:
 # my equation, and I fixed my return to only return football and not just a calculation
 # This is the function for if the user types in football from menu #
 Function Name: football
-Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
+Parameters: None
 Return: football_score
 Algorithm:
 1. Ask user to input interceptions: ("Please enter your number of interceptions made.")
@@ -53,7 +53,7 @@ Algorithm:
 # either add 30 or nothing points, I also added error checking and fixed the return values.
 # This is the function for if the user types in quidditch from menu #
 Function Name: quidditch
-Parameters: goal, snitch
+Parameters: None
 Return: quidditch_score
 Algorithm:
 1. Ask user to input goals: ("Please enter your number of goals made.")
@@ -74,7 +74,7 @@ Algorithm:
 # I made every input a separate line of code, use calculations for min and max, and fixed return value
 # This is the function for if the user types in gymnast from menu #
 Function Name: gymnast
-Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
+Parameters: None
 Return: Calculation of Parameters
 Algorithm:
 1. Ask user to input difficulty: ("Please enter difficulty score.")
@@ -87,8 +87,8 @@ Algorithm:
 8. Call for calculate_max value for calculation, name it maximum
 9. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
 max_value)) / 5 "
-10. Calculate_Gym = "(difficulty) + (average_executions)"
-11. Return Calculation_Gym
+10. gymnast_score = "(difficulty) + (average_executions)"
+11. Return gymnast_score
 
 
 # This function did not originally exist because I honestly just forgot about it, I finally fixed it. #
@@ -133,18 +133,18 @@ Algorithm:
 on the user’s choice of sport."
 2. Call menu_choice from menu
 3. If menu_choice.lower is equal to "football":
-    a. Call football from football_QB
-    b. Output: ("Your football QB rating is", football_score)
+    a. Call football from football_qb
+    b. Output: ("Your football QB rating is", football_qb)
     c. If football_score is greater than or equal to 158.3
         i. Output: "You are a perfect passer."
     d. Otherwise:
         a. Output: "Sorry, you are not considered a perfect passer."
 4. Otherwise/If menu_choice is equal to "quidditch":
     a. Call quidditch from quidditch_q
-    b. Output: ("Your score for Quidditch is", quidditch_score)
+    b. Output: ("Your score for Quidditch is", quidditch_q
 5. Otherwise:
     a. Call gymnast from gymnast_gym
-    b. Output: ("Your final score is", Calculation_Gym)
+    b. Output: ("Your final score is", gymnast_gym)
 6. Output: "Thank you for using this program."
 
 
