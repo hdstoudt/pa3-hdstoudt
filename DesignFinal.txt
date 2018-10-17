@@ -1,4 +1,8 @@
-Function Name: Menu
+
+# For this function I actaully went back to the basics of just asking the user to input sport type and return it as a menu
+# and lower case value
+# This is the menu function where someone originally puts in there choice for where the function will go to #
+Function Name: menu
 Parameters: None
 Return: menu_choice
 Algorithm:
@@ -6,6 +10,7 @@ Algorithm:
 2. Return menu_choice as a lower value
 
 
+# I actually did not even have this in my original algorithim or code, I added it once I realized my mistake #
 Function Name: int_check
 Parameters: value
 Return: Interger value
@@ -17,6 +22,9 @@ Algorithm:
 4. Return value
 
 
+# I changed a lot here: I made each input a different line of code, i checked my inputs to make sure they are ints, I fixed
+# my equation, and I fixed my return to only return football and not just a calculation
+# This is the function for if the user types in football from menu #
 Function Name: football
 Parameters: interceptions, completions, attempts, passing_yards, touchdown_passes
 Return: football_score
@@ -41,6 +49,9 @@ Algorithm:
 17. Return football_score
 
 
+# I made goals a serperate line of code, then I later on asked if there was a snitch caught and if that happened i would
+# either add 30 or nothing points, I also added error checking and fixed the return values.
+# This is the function for if the user types in quidditch from menu #
 Function Name: quidditch
 Parameters: goal, snitch
 Return: quidditch_score
@@ -60,6 +71,8 @@ Algorithm:
 9. Return quidditch_score
 
 
+# I made every input a separate line of code, use calculations for min and max, and fixed return value
+# This is the function for if the user types in gymnast from menu #
 Function Name: gymnast
 Parameters: difficulty, execution1, execution2, execution3, execution4, execution5
 Return: Calculation of Parameters
@@ -77,6 +90,8 @@ max_value)) / 5 "
 10. Calculate_Gym = "(difficulty) + (average_executions)"
 11. Return Calculation_Gym
 
+
+# This function did not originally exist because I honestly just forgot about it, I finally fixed it. #
 Function Name: calculate_min
 Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
 Return: min_value
@@ -92,6 +107,7 @@ Algorithm:
     a. Set min_value to execuation5
 6. Return min_value
 
+# This function did not originally exist because I honestly just forgot about it, I finally fixed it. #
 Function Name: calculate_max
 Parameters: execuation1, execuation2, execuation3, execuation4, execuation5
 Return: max_value
@@ -108,6 +124,7 @@ Algorithm:
 6. Return max_value
 
 
+# I basically updated all of the main function because I had to fix everything else.
 Function Name: Main
 Parameters: None
 Return: None
