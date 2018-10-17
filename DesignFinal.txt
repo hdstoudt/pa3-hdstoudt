@@ -2,17 +2,15 @@ Function Name: Menu
 Parameters: None
 Return: menu_choice
 Algorithm:
-1. Output options: "What type of sport: football, quidditch, gymnast:"
-2. Ask user to choose: menu_choice variable("Please enter a valid sport type.")
-3. Return menu_choice
+1. Ask user to choose: menu_choice variable("Please enter a valid sport type: football, quidditch, gymnast")
+2. Return menu_choice as a lower value
 
-## Need to fix this ## confused? ##
+
 Function Name: int_check
-Parameters: none
+Parameters: value
 Return: Interger value
 Algorithm:
-1. Input value
-2. While input does not equal an integer
+1. While not value.is digit
     a. Output: ("Error! Not an integer!")
     b. Repeat step 1, prompting user to input integer.
 3. Typecast value to an int
@@ -24,18 +22,23 @@ Parameters: interceptions, completions, attempts, passing_yards, touchdown_passe
 Return: football_score
 Algorithm:
 1. Ask user to input interceptions: ("Please enter your number of interceptions made.")
-2. Call int_check to check for valid interger
-3. Ask user to input completions: ("Please enter your number of completions made.")
-4. Call int_check to check for valid interger
-5. Ask user to input attempts: ("Please enter your number of attempts made.")
-6. Call int_check to check for valid interger
-7. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
+2. Call int_check to check for valid interger,
+3. Make interception into new correct value
+4. Ask user to input completions: ("Please enter your number of completions made.")
+5. Call int_check to check for valid interger
+6. Make completions into new correct value
+7. Ask user to input attempts: ("Please enter your number of attempts made.")
 8. Call int_check to check for valid interger
-9. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
-10. Call int_check to check for valid interger
-11. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
+9. Make attempts into new correct value
+10. Ask user to input passing_yards: ("Please enter your number of passing yards made.")
+11. Call int_check to check for valid interger
+12. Make passing_yards into new correct value
+13. Ask user to input touchdown_passes: ("Please enter your number of touchdown passes made.")
+14. Call int_check to check for valid interger
+15. Make touchdown_passes into new correct value
+16. Calculate football_score: ("100 * [5(completions/attempts – 0.3) + 0.25(passing_yards/attempts-3) +
   20(touchdown_passes/attempts) + 2.375 – (25 * interceptions/attempts)]/6")
-12. Return football_score
+17. Return football_score
 
 
 Function Name: quidditch
@@ -44,11 +47,12 @@ Return: quidditch_score
 Algorithm:
 1. Ask user to input goals: ("Please enter your number of goals made.")
 2. Call int_check to check for valid interger
+Make interception into new correct value
 4. Calculate quidditch_score: "(10(goal)"
 5. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
 6. If snitch is equal to "yes"
     a. Add 30 to quidditch_score
-7. Otherwise/If snitch is equal to "no":
+7. Otherwise/If snitch is equal to "no"
     a. Add 0 to quidditch_score
 8. Otherwise:
     a. Output: ("Error! Invalid Answer.")
