@@ -72,7 +72,6 @@ def gymnast():
     minimum = calculate_min(execuation1, execuation2, execuation3, execuation4, execuation5)
     maximum = calculate_max(execuation1, execuation2, execuation3, execuation4, execuation5)
     average_executions = ((execuation1 + execuation2 + execuation3 + execuation4 + execuation5) - (minimum + maximum)) / 3
-
     calculate_gym = (difficulty) + (average_executions)
     return calculate_gym
 

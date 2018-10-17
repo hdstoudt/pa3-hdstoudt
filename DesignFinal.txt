@@ -47,7 +47,7 @@ Return: quidditch_score
 Algorithm:
 1. Ask user to input goals: ("Please enter your number of goals made.")
 2. Call int_check to check for valid interger
-Make interception into new correct value
+3. Make goals into new correct value
 4. Calculate quidditch_score: "(10(goal)"
 5. Ask user to input snitch: ("Did you catch the golden snitch? yes or no?")
 6. If snitch is equal to "yes"
@@ -56,7 +56,7 @@ Make interception into new correct value
     a. Add 0 to quidditch_score
 8. Otherwise:
     a. Output: ("Error! Invalid Answer.")
-    b. Go back to step 5
+    b. Go back to step 5, prompting user to input yes or no
 9. Return quidditch_score
 
 
@@ -70,8 +70,8 @@ Algorithm:
 4. Call execution3 function: ("Please enter execution3 score."))
 5. Call execution4 function: ("Please enter execution4 score."))
 6. Call execution5 function: ("Please enter execution5 score."))
-7. Call for min_value for calculation
-8. Call for max-value for calculation
+7. Call for calculate_min value for calculation, name it minimum
+8. Call for calculate_max value for calculation, name it maximum
 9. Calculate average_executions: "((execution1 + execution2 + execution3 + execution4 + execution5) - (min_value +
 max_value)) / 5 "
 10. Calculate_Gym = "(difficulty) + (average_executions)"
@@ -114,22 +114,22 @@ Return: None
 Algorithm:
 1. Tell the user the purpose of the program: "This program will calculate various sports statistics for the user, based
 on the user’s choice of sport."
-2. Call menu
-3. If menu_choice is equal to "football":
-    a. Call football
+2. Call menu_choice from menu
+3. If menu_choice.lower is equal to "football":
+    a. Call football from football_QB
     b. Output: ("Your football QB rating is", football_score)
-    c. If football_score is equal to 158.3
-        i.Output: "You are a perfect passer."
+    c. If football_score is greater than or equal to 158.3
+        i. Output: "You are a perfect passer."
     d. Otherwise:
         a. Output: "Sorry, you are not considered a perfect passer."
 4. Otherwise/If menu_choice is equal to "quidditch":
-    a. Call quidditch
+    a. Call quidditch from quidditch_q
     b. Output: ("Your score for Quidditch is", quidditch_score)
 5. Otherwise:
-    a. Call gymnast
+    a. Call gymnast from gymnast_gym
     b. Output: ("Your final score is", Calculation_Gym)
 6. Output: "Thank you for using this program."
-7. Return main
+
 
 ## Run the Program ##
 main()
