@@ -5,8 +5,26 @@ that you read all of the instructions so you don't acidently disobey the rules, 
 
 take your work that you worked so hard on. This Pa was also really challenging as it was the first time working on
 
-functions. I learned that everything does not have to be a function, meaning that you dont have to make it a function if
+functions. I learned that everything does not have to be a function, meaning that you don't have to make it a function if
 
 it is esier to do it without one. The algorithim was actually harder then the coding for me, just because I had to keep
 
-getting it rechecked because
+getting it rechecked because of making stupid mistakes; meanwhile with the code it was a lot easier to fix my mistakes
+
+because I had carefully thought out what to do. This Pa overall was a good learning experiance, even the flowchart
+
+was a good learning experiance because at first I was overwhelmed and did not know where to start so I stripped it
+
+down and looked at it from beggining to end eventually finding my way back to where I needed to go. Test cases were
+
+pretty simple, I also learned to use tutoring and office hours a lot more so that was helpful. The main coding problem
+
+I ended up having was figuring out the parameters, and also returning to many values in one function when you are
+
+only supposed to return one overall value. The other coding problem was figuring out the int check, just because I
+
+forgot hot to call it and then re-enstate it with the new value, but I got there in the end. I was really proud that
+
+I managaed to overcome a major set back in my personal and academic life in order to finish this assignment with, what
+
+I hope is, a good grade. Good learning experiance, and good practice for next time.
